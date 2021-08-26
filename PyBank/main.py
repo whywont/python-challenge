@@ -61,17 +61,3 @@ print(finance + '\n\n----------------------------\n\n'
             '\nGreatest Increase in Profits: ' + monthData[max_month_index + 1] + ' $' + str(maxi) + 
                 '\nGreatest Decrease in Profits: ' + monthData[min_month_index + 1] + ' $' + str(mini))
  
-
-
-
-
-    
-
-        
-        
-
-   
-
-
-    
-        
