@@ -43,20 +43,20 @@ with open(bank_data, 'r', encoding= 'utf-8') as csvfile:
     min_month_index = change.index(mini)
 
     #calculates average
-    average = sum(change)/len(change)
+    average = round(sum(change)/len(change),3)
 
 #specifies directory for output   
 txt_file = os.path.join("analysis", "bank_data.txt")
 
 #creates txt file with writer permisions and adds data
 with open(txt_file, 'w', encoding= 'utf-8') as txtfile:
-    txtfile.write(finance + '\n\n----------------------------\n\n')
+    txtfile.write(finance + '\n----------------------------\n')
     txtfile.write('Total Months: ' + str(months) + '\n' + 'Total: ' + str(total) + '\nAverage Change: ' + str(average) + 
                     '\nGreatest Increase in Profits: ' + monthData[max_month_index + 1] + ' $' + str(maxi) + 
                     '\nGreatest Decrease in Profits: ' + monthData[min_month_index + 1] + ' $' + str(mini))
 
 #prints values to console
-print(finance + '\n\n----------------------------\n\n'
+print(finance + '\n----------------------------\n'
         'Total Months: ' + str(months) + '\n' + 'Total: ' + str(total) + '\nAverage Change: ' + str(average) + 
             '\nGreatest Increase in Profits: ' + monthData[max_month_index + 1] + ' $' + str(maxi) + 
                 '\nGreatest Decrease in Profits: ' + monthData[min_month_index + 1] + ' $' + str(mini))
