@@ -47,9 +47,4 @@ with open(txt_file, 'w', encoding= 'utf-8') as txtfile:
     txtfile.write('-------------------------\nWinner: '  + winner +'\n-------------------------')   
 
             
-        
-    
-#pol_dict= {'Kahn': khan_vote, 'Correy': correy_vote, 'Li' :li_vote, "O'Tooley" : o_tooley_vote}
-
-#sort_pol = sorted(pol_dict.items(), key=lambda x: x[1], reverse=True)
 
